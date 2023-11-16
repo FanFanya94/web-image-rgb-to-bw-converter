@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import io
 
-file = st.file_uploader(label="Select file")
+file = st.file_uploader(label="Select file", type=['png', 'jpg'])
 
 if file:
     # Conversion
