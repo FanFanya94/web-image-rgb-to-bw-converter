@@ -2,6 +2,9 @@ import streamlit as st
 from PIL import Image
 import io
 
+st.title("RGB to BW converter")
+st.subheader("Select image file you want to convert to black and white.")
+
 file = st.file_uploader(label="Select file", type=['png', 'jpg'])
 
 if file:
