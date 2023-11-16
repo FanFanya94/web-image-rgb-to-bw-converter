@@ -22,10 +22,10 @@ if file:
     file_format = original_name.split('.')[-1]
     file_name = original_name.strip('.' + file_format) + "_bw"
     new_full_name = file_name + '.' + file_format
-    st.text("Original name: " + original_name)
-    st.text("New name: " + new_full_name)
+    # st.text("Original name: " + original_name)
+    # st.text("New name: " + new_full_name)
 
     # Saving to the hard drive
-    st.download_button("Save image", help="Save image to the hard drive",
+    st.download_button("Save BW image", help="Save black and white image to the hard drive",
                        data=gray_img_bytes,
                        file_name=new_full_name)
